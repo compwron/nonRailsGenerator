@@ -11,7 +11,7 @@ echo "gem 'rspec'" >> Gemfile
 
 # first Git commit
 touch .gitignore
-echo 2.0.0 > .ruby-version
+echo 2.0.0-p195 > .ruby-version
 git init
 git add .
 git commit -m "Project structure"
