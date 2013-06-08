@@ -4,5 +4,5 @@ mkdir spec
 mkdir config
 touch Gemfile
 touch .gitignore
-touch .ruby-version
+echo 2.0.0 > .ruby-version
 touch README.md
