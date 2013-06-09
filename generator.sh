@@ -15,3 +15,20 @@ echo 2.0.0-p195 > .ruby-version
 git init
 git add .
 git commit -m "Project structure"
+
+
+# set up sample rspec file - after making first commit!
+echo 'require_relative "../lib/foo"
+
+describe Foo do
+
+  subject { Foo.new }
+
+  before do
+  end
+
+  describe "#method_name" do
+    it "should do stuff because x" do
+    	subject.method_name.should == "value"
+    end
+end' >> spec/foo_spec.rb
