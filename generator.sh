@@ -3,6 +3,7 @@ mkdir lib
 mkdir spec
 mkdir config
 touch README.md
+echo "--format doc" > .rspec
 
 # Gemfile
 touch Gemfile
