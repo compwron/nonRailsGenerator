@@ -1,4 +1,3 @@
-mkdir bin
 mkdir lib
 mkdir spec
 mkdir config
@@ -33,3 +32,9 @@ describe Foo do
     	subject.method_name.should == "value"
     end
 end' >> spec/foo_spec.rb
+
+
+mkdir bin
+touch bin/go
+echo "#!/usr/bin/env ruby" > bin/go
+chmod +x bin/go
