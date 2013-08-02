@@ -31,6 +31,7 @@ describe Foo do
     it "should do stuff because x" do
     	subject.method_name.should == "value"
     end
+  end
 end' >> spec/foo_spec.rb
 
 
