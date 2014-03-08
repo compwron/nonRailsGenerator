@@ -6,7 +6,7 @@ echo "--format doc" > .rspec
 
 # Gemfile
 touch Gemfile
-echo "source 'http://rubygems.org'" > Gemfile
+echo "source 'https://rubygems.org'" > Gemfile
 echo "gem 'rspec'" >> Gemfile
 
 # first Git commit
@@ -33,6 +33,12 @@ describe Foo do
     end
   end
 end' >> spec/foo_spec.rb
+
+echo 'require "simplecov" 
+SimpleCov.start
+
+require_relative "../lib/foo.rb"
+' >> spec/spec_helper.rb
 
 
 mkdir bin
